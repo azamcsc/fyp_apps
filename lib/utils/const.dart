@@ -41,16 +41,16 @@ class Constants {
     return ThemeData(
       backgroundColor: lightBackground,
       primaryColor: lightPrimary,
-      accentColor: lightAccent,
-      cursorColor: lightAccent,
+      hintColor: lightAccent,
+      cardColor: lightAccent,
       scaffoldBackgroundColor: lightBackground,
       textTheme: GoogleFonts.latoTextTheme(Theme.of(context).textTheme),
-      appBarTheme: AppBarTheme(
-        textTheme: GoogleFonts.latoTextTheme(Theme.of(context).textTheme),
+     /* appBarTheme: AppBarTheme(
+        iconTheme: GoogleFonts.latoTextTheme(Theme.of(context).textTheme),
         iconTheme: IconThemeData(
           color: lightAccent,
         ),
-      ),
+      ),*/
     );
   }
 

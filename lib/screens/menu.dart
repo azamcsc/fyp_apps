@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:fyp_apps/screens/detail_screen.dart';
 import 'package:fyp_apps/screens/home2.dart';
-import 'package:fyp_apps/screens/zzzzz.dart';
+//import 'package:fyp_apps/screens/zzzzz.dart';
 import 'package:fyp_apps/utils/const.dart';
-import 'package:fyp_apps/screens/gggg.dart';
+import 'package:fyp_apps/screens/sample.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
@@ -27,7 +27,7 @@ var listx;
     ),
     MyRoute(
       iconData: Icons.compare_arrows,
-      page: ItemDetailsPage(),//DetailScreenx(),
+      page: SamplePage(),//DetailScreenx(),
     ),
     MyRoute(
       iconData: Icons.compare_arrows,
@@ -80,5 +80,5 @@ class MyRoute {
   final IconData iconData;
   final Widget page;
 
-  MyRoute({this.iconData, this.page});
+  MyRoute({required this.iconData, required this.page});
 }

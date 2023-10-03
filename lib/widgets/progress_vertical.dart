@@ -10,10 +10,10 @@ class ProgressVertical extends StatelessWidget {
   final bool isShowDate;
 
   ProgressVertical(
-      {Key key,
-        @required this.value,
-        @required this.date,
-        @required this.isShowDate})
+      {required Key key,
+        required this.value,
+        required this.date,
+        required this.isShowDate})
       : super(key: key);
 
   @override

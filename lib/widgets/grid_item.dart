@@ -6,20 +6,19 @@ class GridItem extends StatelessWidget {
   final String time;
   final String value;
   final String unit;
-  final ImageProvider image;
+  final String image;
   final Color color;
   final String remarks;
 
   GridItem({
-    Key key,
-    @required this.status,
-    @required this.value,
-    @required this.unit,
-    @required this.time,
-    @required this.image,
-    @required this.remarks,
-    @required this.color,
-  }) : super(key: key);
+    required this.status,
+    required this.value,
+    required this.unit,
+    required this.time,
+    required this.image,
+    required this.remarks,
+    required this.color,
+  }) ;
 
   @override
   Widget build(BuildContext context) {
@@ -64,7 +63,7 @@ class GridItem extends StatelessWidget {
                 ],
               ),
               SizedBox(height: 10),
-              (image == null)
+              (image == "")
                   ? Column(
                       children: <Widget>[
                         Text(
@@ -88,9 +87,9 @@ class GridItem extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.end,
                       children: <Widget>[
-                        Image(
+                       /* Image(
                           image: image,
-                        ),
+                        ),*/
                         Text(
                           remarks,
                           style: TextStyle(

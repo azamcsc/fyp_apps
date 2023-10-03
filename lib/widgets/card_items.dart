@@ -12,14 +12,14 @@ class CardItems extends StatelessWidget {
   final int progress;
 
   CardItems({
-    Key key,
-    @required this.image,
-    @required this.title,
-    @required this.value,
-    @required this.unit,
-    @required this.color,
-    @required this.progress,
-  }) : super(key: key);
+
+    required this.image,
+    required this.title,
+    required this.value,
+    required this.unit,
+    required this.color,
+    required this.progress,
+  });
 
   @override
   Widget build(BuildContext context) {

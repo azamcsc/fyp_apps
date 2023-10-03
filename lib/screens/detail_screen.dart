@@ -248,7 +248,7 @@ class DetailScreen extends StatelessWidget {
                                value: "7.6",
                                unit: "mmol/L",
                                color: Constants.darkGreen,
-                               image: null,
+                               image: "",
                                remarks: "ok"
                            );
                            break;
@@ -259,7 +259,7 @@ class DetailScreen extends StatelessWidget {
                                value: "8.2",
                                unit: "mmol/L",
                                color: Colors.redAccent,
-                               image: null,
+                               image: "",
                                remarks: "ok"
                            );
                            break;
@@ -270,7 +270,7 @@ class DetailScreen extends StatelessWidget {
                                value: "5.2",
                                unit: "mmol/L",
                                color: Constants.darkOrange,
-                               image: null,
+                               image: "",
                                remarks: "ok"
                            );
                            break;
@@ -281,7 +281,7 @@ class DetailScreen extends StatelessWidget {
                                value: "12.2",
                                unit: "mmol/L",
                                color: Constants.darkBlue,
-                               image: null,
+                               image: "",
                                remarks: "Ok"
                            );
                            break;
@@ -291,7 +291,7 @@ class DetailScreen extends StatelessWidget {
                              time: "4h 45m",
                              value: "76",
                              unit: "avg bpm",
-                             image: null,
+                             image: "",
                              remarks: "ok",
                              color: Constants.darkOrange,
                            );
@@ -377,7 +377,7 @@ class DetailScreen extends StatelessWidget {
                     ),
 
                     SizedBox(height: 35),
-                    RaisedButton(
+                    MaterialButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(5.0)),
                       child: Text(

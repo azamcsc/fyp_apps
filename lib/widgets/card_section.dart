@@ -12,13 +12,13 @@ class CardSection extends StatelessWidget {
   final bool isDone;
 
   CardSection(
-      {Key key,
-      @required this.title,
-      @required this.value,
-      @required this.unit,
-      @required this.time,
-      @required this.image,
-      this.isDone})
+      {required Key key,
+      required this.title,
+      required this.value,
+      required this.unit,
+      required this.time,
+      required this.image,
+      required this.isDone})
       : super(key: key);
 
   @override
@@ -35,7 +35,7 @@ class CardSection extends StatelessWidget {
               color: Colors.white,
             ),
             child: Stack(
-              overflow: Overflow.clip,
+            // overflow: Overflow.clip,
               children: <Widget>[
                 Positioned(
                     child: ClipPath(
@@ -62,7 +62,7 @@ class CardSection extends StatelessWidget {
                             image: image,
                             width: 24,
                             height: 24,
-                            color: Theme.of(context).accentColor,
+                            color: Colors.black,
                           ),
                           Text(
                               time,
@@ -105,14 +105,14 @@ class CardSection extends StatelessWidget {
                               decoration: new BoxDecoration(
                                 borderRadius: BorderRadius.all(Radius.circular(10.0)),
                                 shape: BoxShape.rectangle,
-                                color: isDone ? Theme.of(context).accentColor : Color(0xFFF0F4F8),
+                                color: isDone ? Colors.black : Color(0xFFF0F4F8),
                               ),
                               width: 44,
                               height: 44,
                               child: Center(
                                 child: Icon(
                                   Icons.check,
-                                  color: isDone ? Colors.white : Theme.of(context).accentColor,
+                                  color: isDone ? Colors.white : Colors.black,
                                 ),
                               ),
                             ),

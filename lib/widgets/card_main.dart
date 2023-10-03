@@ -12,13 +12,13 @@ class CardMain extends StatelessWidget {
   final Color color;
 
   CardMain(
-      {Key key,
-      @required this.image,
-      @required this.title,
-      @required this.value,
-      @required this.unit,
-      @required this.color})
-      : super(key: key);
+      {
+      required this.image,
+      required this.title,
+      required this.value,
+      required this.unit,
+      required this.color});
+
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,7 @@ class CardMain extends StatelessWidget {
               child: InkWell(
                 borderRadius: BorderRadius.all(Radius.circular(10.0)),
                 child: Stack(
-                  overflow: Overflow.clip,
+                  //overflow: Overflow.clip,
                   children: <Widget>[
                     Positioned(
                         child: ClipPath(
