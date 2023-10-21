@@ -4,7 +4,7 @@ import 'package:fyp_apps/screens/detail_screen.dart';
 import 'package:fyp_apps/screens/home2.dart';
 //import 'package:fyp_apps/screens/zzzzz.dart';
 import 'package:fyp_apps/utils/const.dart';
-import 'package:fyp_apps/screens/sample.dart';
+import 'package:fyp_apps/screens/graf.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 
@@ -27,12 +27,12 @@ var listx;
     ),
     MyRoute(
       iconData: Icons.compare_arrows,
-      page: SamplePage(),//DetailScreenx(),
-    ),
+      page: GrafScreen(),//SamplePage(),//DetailScreenx(),
+    )/*,
     MyRoute(
       iconData: Icons.compare_arrows,
        page:HomeScreen2(),// Chart(),
-    )
+    )*/
   ];
 
   @override
@@ -57,7 +57,7 @@ var listx;
           ),
           //Icon(FontAwesomeIcons., size: 30,color: Colors.white,),
           Icon(Icons.bar_chart, size: 40,color: Colors.white,),
-          Icon(Icons.settings, size: 40,color: Colors.white,),
+         // Icon(Icons.settings, size: 40,color: Colors.white,),
         ],
         color: Constants.darkGreen,//Colors.white,
         buttonBackgroundColor: Constants.darkGreen,
